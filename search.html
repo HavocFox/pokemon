@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="PokeSearch" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .header {
+      font-family: 'Anton', sans-serif;
+      background-color: #ffffff;
+      color: #ff0000;
+      border-radius: 10px;
+      border: 2px solid black; /* Adding a solid black border */
+      padding: 10px 20px;
+      margin-bottom: 20px; /* Adding some margin for spacing */
+      text-align:center;
+    }
+
+    .introductory {
+      font-family: 'Anton', sans-serif;
+      color: #ff0000;
+      border-radius: 10px;
+      border: 2px solid black; /* Adding a solid black border */
+      padding: 10px 20px;
+      margin-bottom: 20px; /* Adding some margin for spacing */
+      text-align:center;
+      background-color: #ffffff;
+    }
+
+    .container::before {
+    content: "";
+    background: url("pokeball.png") no-repeat center center;
+    background-size: cover; /* Adjust size as needed */
+    opacity: 0.1; /* Adjust transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+    .myForm {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    .task-details-heading h1 {
+      margin-bottom: 0;
+    }
+    .card-title, .card-text {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .task-dashboard-heading {
+      font-family: 'Anton', sans-serif;
+      background-color: #8000ff;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    .task-dashboard-heading h1 {
+      margin-bottom: 0;
+    }
+    .card-title, .card-text {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .btn.btn-danger:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+    .bg-primary {
+      color: aquamarine;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    body {
+      animation: fadeIn 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    
+.footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.footer2{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    min-height: 25vh;
+    max-height: 25vh;
+    position: relative;
+}
+
+.container.p-4.pb-0{
+    border: 2px solid black; /* Adding a solid black border */
+    background-color: #fff;
+    border-radius: 20px;
+}
+  </style>
+<title>Title</title>
+</head>
+<body>
+    <br>
+
+    <div class = "header">
+        <span class="border">
+    <h1>Search for a Pokemon</h1>
+</span>
+</div>
+
+<div class = "introductory">
+
+    Search for any Pokemon by its name or PokeDex number to see details about it!
+
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form id="myForm" class="was-validated">
+        <div class="col-md-12">
+        </div>
+<div class = "row justify-content-center">
+    <form id="myForm">
+        <input type="text" name="pokemon">
+        <button type="submit" class = "btn btn-danger">Search</button>
+    </form>
+</div>
+<div class = "container center-content">
+</div><br>
+        <div class="container p-4 pb-0">
+            <section class="footer">
+              <p class="d-flex justify-content-center align-items-center">
+                <p>All Dex Details in the palm of your hand!</p>
+              </p>
+            </section>
+            <section class="footer2">
+                <p class="d-flex justify-content-center align-items-center">
+                  <img src = "pokeball.png" width = 200px height = 200px align-items: center></img>
+                </p>
+              </section>
+          </div>
+    </div>
+    
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

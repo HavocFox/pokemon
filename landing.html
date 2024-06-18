@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="PokeSearch" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .container {
+      font-family: 'Anton', sans-serif;
+      border-radius: 10px;
+      border: 4px solid black; /* Adding a solid black border */
+      padding: 10px 20px;
+      margin-bottom: 20px; /* Adding some margin for spacing */
+      text-align:center;
+    }
+
+    .display-4 {
+          font-family: 'Anton', sans-serif;
+          
+        }
+        .jumbotron p.lead {
+          font-family: 'Space Grotesk', sans-serif;
+        }
+        .jumbotron p {
+            
+          font-family: 'Space Grotesk', sans-serif;
+        }
+
+
+    .footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.footer2{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    min-height: 25vh;
+    max-height: 25vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.custom-jumbotron::before {
+    content: "";
+    background: url("pokeball.png") no-repeat center center;
+    background-size: cover; /* Adjust size as needed */
+    opacity: 0.2; /* Adjust transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container.p-4.pb-0{
+    background-color: #ffffff;
+}
+.custom-jumbotron{
+    background-color: #ffbcbc;
+    padding: 20px;
+}
+
+</style>
+
+<div class="container">
+    
+    <div class="jumbotron text-center bg-light p-5 mb-4 rounded-3">
+      <div class="custom-jumbotron">
+      <h1 class="display-4">Welcome to the Pokedex!</h1>
+      <p class="lead">Your first stop for all your Pokemon details.</p>
+      <hr class="my-4">
+      <p>Click below to search our Pokedex!</p>
+      <a class="btn btn-primary btn-lg btn-danger" href="search.html" role="button">Search</a>
+    </div>
+  </div>
+<div class = "container center-content">
+</div>
+        <div class="container p-4 pb-0">
+            <section class="footer">
+              <p class="d-flex justify-content-center align-items-center">
+                <p>All Dex Details in the palm of your hand!</p>
+              </p>
+            </section>
+            <section class="footer2">
+                <p class="d-flex justify-content-center align-items-center">
+                  <img src = "pokeball.png" width = 200px height = 200px align-items: center></img>
+                </p>
+              </section>
+          </div>
+    </div>

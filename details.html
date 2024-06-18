@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="PokeSearch" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .header {
+      font-family: 'Anton', sans-serif;
+      background-color: #ffffff;
+      color: #ff0000;
+      border-radius: 10px;
+      border: 2px solid black;
+      padding: 10px 10px;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    .introductory {
+      font-family: 'Anton', sans-serif;
+      color: #ff0000;
+      border-radius: 10px;
+      border: 2px solid black;
+      padding: 10px 10px;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    .task-details-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #ff0000;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+    .task-details-heading h1 {
+      margin-bottom: 0;
+    }
+    .card-title, .card-text {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .task-details-heading h1 {
+      margin-bottom: 0;
+    }
+    .card-title, .card-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
+      max-width: 800px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 8px solid rgb(255, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card{
+      font-family: 'Space Grotesk', sans-serif;
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .task-dashboard-heading {
+      font-family: 'Anton', sans-serif;
+      background-color: #8000ff;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    .task-dashboard-heading h1 {
+      margin-bottom: 0;
+    }
+
+    .bg-primary {
+      color: aquamarine;
+    }
+
+    table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #ff0000;
+    padding: 20px;
+    
+}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  .center-content {
+    flex-direction: column;
+  }
+}
+
+    body {
+      animation: fadeIn 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+
+    .center-content {
+        border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.stats-section {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.stats-section h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #ff0000;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.stats-table {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.footer2{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    min-height: 25vh;
+    max-height: 25vh;
+    position: relative;
+    
+}
+
+.container::before {    /*pokeball BG*/
+    content: "";
+    background: url("pokeball.png") no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container.p-4.pb-0{     /*pokeball footer*/
+    border: 4px solid black;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+  </style>
+<title>Pokemon Details</title>
+</head>
+<body>
+<br>
+    <div class="task-details-heading rounded p-3 text-white text-center">
+      <h1 class="display-4">Pokemon Details</h1>
+    </div><br>
+
+    <div class = "container center-content">
+</div><br>
+        <div class="container p-4 pb-0">
+            <section class="footer">
+              <p class="d-flex justify-content-center align-items-center">
+                <p>All Dex Details in the palm of your hand!</p>
+              </p>
+            </section>
+            <section class="footer2">
+                <p class="d-flex justify-content-center align-items-center">
+                  <img src = "pokeball.png" width = 200px height = 200px align-items: center></img>
+                </p>
+              </section>
+          </div>
+    </div>
+
+<script src="details.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
